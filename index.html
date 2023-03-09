@@ -2,6 +2,74 @@
 <html lang="en">
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
+
+<script type="text/javascript">
+  $(function () {
+    $.getJSON('info.json', function (data) {
+      console.log('success');
+      document.getElementById("Name").innerHTML = data.name;
+      document.getElementById("title").innerHTML = data.title;
+      document.getElementById("introtext_1").innerHTML = data.introtext_1;
+      document.getElementById("introtext_2").innerHTML = data.introtext_2;
+      document.getElementById("nav1").innerHTML = data.navbar.nav1;
+      document.getElementById("nav2").innerHTML = data.navbar.nav2;
+      document.getElementById("nav3").innerHTML = data.navbar.nav3;
+      document.getElementById("nav4").innerHTML = data.navbar.nav4;
+      document.getElementById("nav5").innerHTML = data.navbar.nav5;
+      document.getElementById("nav6").innerHTML = data.navbar.nav6;
+      document.getElementById("program1").innerHTML = data.Programming.program1;
+      document.getElementById("program2").innerHTML = data.Programming.program2;
+      document.getElementById("program3").innerHTML = data.Programming.program3;
+      document.getElementById("program4").innerHTML = data.Programming.program4;
+      document.getElementById("trend1").innerHTML = data.Trending.trend1;
+      document.getElementById("trend2").innerHTML = data.Trending.trend2;
+      document.getElementById("trend3").innerHTML = data.Trending.trend3;
+      document.getElementById("trend4").innerHTML = data.Trending.trend4;
+      document.getElementById("trend5").innerHTML = data.Trending.trend5;
+      document.getElementById("platfrom1").innerHTML = data.Platforms.platfrom1;
+      document.getElementById("platfrom2").innerHTML = data.Platforms.platfrom2;
+      document.getElementById("platfrom3").innerHTML = data.Platforms.platfrom3;
+      document.getElementById("platfrom4").innerHTML = data.Platforms.platfrom4;
+      document.getElementById("content-h3").innerHTML = data.About.content_h3;
+      document.getElementById("content-h2").innerHTML = data.About.content_h2;
+      document.getElementById("content-p1").innerHTML = data.About.content_p1;
+      document.getElementById("content-p2").innerHTML = data.About.content_p2;
+      document.getElementById("value_1").innerHTML = data.Values.value_1;
+      document.getElementById("value_1_description").innerHTML = data.Values.value_1_description;
+      document.getElementById("value_2").innerHTML = data.Values.value_2;
+      document.getElementById("value_2_description").innerHTML = data.Values.value_2_description;
+      document.getElementById("value_3").innerHTML = data.Values.value_3;
+      document.getElementById("value_3_description").innerHTML = data.Values.value_3_description;
+      document.getElementById("service_1").innerHTML = data.Services.service_1;
+      document.getElementById("service_1_description").innerHTML = data.Services.service_1_description;
+      document.getElementById("service_2").innerHTML = data.Services.service_2;
+      document.getElementById("service_2_description").innerHTML = data.Services.service_2_description;
+      document.getElementById("service_3").innerHTML = data.Services.service_3;
+      document.getElementById("service_3_description").innerHTML = data.Services.service_3_description;
+      document.getElementById("service_4").innerHTML = data.Services.service_4;
+      document.getElementById("service_4_description").innerHTML = data.Services.service_4_description;
+      document.getElementById("service_5").innerHTML = data.Services.service_5;
+      document.getElementById("service_5_description").innerHTML = data.Services.service_5_description;
+      document.getElementById("service_6").innerHTML = data.Services.service_6;
+      document.getElementById("service_6_description").innerHTML = data.Services.service_6_description;
+      document.getElementById("faq_1").innerHTML = data.FAQs.faq_1;
+      document.getElementById("faq-content-1").innerHTML = data.FAQs.faqa_1;
+      document.getElementById("faq_2").innerHTML = data.FAQs.faq_2;
+      document.getElementById("faq-content-2").innerHTML = data.FAQs.faqa_2;
+      document.getElementById("faq_3").innerHTML = data.FAQs.faq_3;
+      document.getElementById("faq2-content-1").innerHTML = data.FAQs.faqa_3;
+      document.getElementById("faq_4").innerHTML = data.FAQs.faq_4;
+      document.getElementById("faq2-content-2").innerHTML = data.FAQs.faqa_4;
+
+     
+
+    }).error(function () {
+      console.log('error');
+    });
+  });
+</script>
+
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -1111,71 +1179,7 @@
 </body>
 
 
-<script type="text/javascript">
-  $(function () {
-    $.getJSON('info.json', function (data) {
-      console.log('success');
-      document.getElementById("Name").innerHTML = data.name;
-      document.getElementById("title").innerHTML = data.title;
-      document.getElementById("introtext_1").innerHTML = data.introtext_1;
-      document.getElementById("introtext_2").innerHTML = data.introtext_2;
-      document.getElementById("nav1").innerHTML = data.navbar.nav1;
-      document.getElementById("nav2").innerHTML = data.navbar.nav2;
-      document.getElementById("nav3").innerHTML = data.navbar.nav3;
-      document.getElementById("nav4").innerHTML = data.navbar.nav4;
-      document.getElementById("nav5").innerHTML = data.navbar.nav5;
-      document.getElementById("nav6").innerHTML = data.navbar.nav6;
-      document.getElementById("program1").innerHTML = data.Programming.program1;
-      document.getElementById("program2").innerHTML = data.Programming.program2;
-      document.getElementById("program3").innerHTML = data.Programming.program3;
-      document.getElementById("program4").innerHTML = data.Programming.program4;
-      document.getElementById("trend1").innerHTML = data.Trending.trend1;
-      document.getElementById("trend2").innerHTML = data.Trending.trend2;
-      document.getElementById("trend3").innerHTML = data.Trending.trend3;
-      document.getElementById("trend4").innerHTML = data.Trending.trend4;
-      document.getElementById("trend5").innerHTML = data.Trending.trend5;
-      document.getElementById("platfrom1").innerHTML = data.Platforms.platfrom1;
-      document.getElementById("platfrom2").innerHTML = data.Platforms.platfrom2;
-      document.getElementById("platfrom3").innerHTML = data.Platforms.platfrom3;
-      document.getElementById("platfrom4").innerHTML = data.Platforms.platfrom4;
-      document.getElementById("content-h3").innerHTML = data.About.content_h3;
-      document.getElementById("content-h2").innerHTML = data.About.content_h2;
-      document.getElementById("content-p1").innerHTML = data.About.content_p1;
-      document.getElementById("content-p2").innerHTML = data.About.content_p2;
-      document.getElementById("value_1").innerHTML = data.Values.value_1;
-      document.getElementById("value_1_description").innerHTML = data.Values.value_1_description;
-      document.getElementById("value_2").innerHTML = data.Values.value_2;
-      document.getElementById("value_2_description").innerHTML = data.Values.value_2_description;
-      document.getElementById("value_3").innerHTML = data.Values.value_3;
-      document.getElementById("value_3_description").innerHTML = data.Values.value_3_description;
-      document.getElementById("service_1").innerHTML = data.Services.service_1;
-      document.getElementById("service_1_description").innerHTML = data.Services.service_1_description;
-      document.getElementById("service_2").innerHTML = data.Services.service_2;
-      document.getElementById("service_2_description").innerHTML = data.Services.service_2_description;
-      document.getElementById("service_3").innerHTML = data.Services.service_3;
-      document.getElementById("service_3_description").innerHTML = data.Services.service_3_description;
-      document.getElementById("service_4").innerHTML = data.Services.service_4;
-      document.getElementById("service_4_description").innerHTML = data.Services.service_4_description;
-      document.getElementById("service_5").innerHTML = data.Services.service_5;
-      document.getElementById("service_5_description").innerHTML = data.Services.service_5_description;
-      document.getElementById("service_6").innerHTML = data.Services.service_6;
-      document.getElementById("service_6_description").innerHTML = data.Services.service_6_description;
-      document.getElementById("faq_1").innerHTML = data.FAQs.faq_1;
-      document.getElementById("faq-content-1").innerHTML = data.FAQs.faqa_1;
-      document.getElementById("faq_2").innerHTML = data.FAQs.faq_2;
-      document.getElementById("faq-content-2").innerHTML = data.FAQs.faqa_2;
-      document.getElementById("faq_3").innerHTML = data.FAQs.faq_3;
-      document.getElementById("faq2-content-1").innerHTML = data.FAQs.faqa_3;
-      document.getElementById("faq_4").innerHTML = data.FAQs.faq_4;
-      document.getElementById("faq2-content-2").innerHTML = data.FAQs.faqa_4;
 
-     
-
-    }).error(function () {
-      console.log('error');
-    });
-  });
-</script>
 
 
 </html>
